@@ -1,0 +1,36 @@
+{
+  "name": "hbd-mama",
+  "version": "0.0.1",
+  "description": "Crossword game",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parasnarang/hbd-mama.git"
+  },
+  "author": "parasnarang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/parasnarang/hbd-mama/issues"
+  },
+  "homepage": "https://github.com/parasnarang/hbd-mama#readme",
+  "scripts": {
+    "dev": "rollup -c -w",
+    "start": "sirv public",
+    "predeploy": "rollup -c",
+    "deploy": "rollup -c rollup.config-ssr.js"
+  },
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^15.1.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "rollup": "^2.32.1",
+    "rollup-plugin-execute": "^1.1.1",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^6.1.0",
+    "shelljs": "^0.8.4",
+    "sirv-cli": "^0.4.4",
+    "svelte": "^3.38.3",
+    "svelte-crossword": "^0.3.4"
+  }
+}
