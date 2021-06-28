@@ -1086,7 +1086,7 @@ var app = (function () {
     }
 
     // (10:4) {#if action === 'clear'}
-    function create_if_block$5(ctx) {
+    function create_if_block$6(ctx) {
     	let button;
     	let t;
     	let mounted;
@@ -1128,7 +1128,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block$5.name,
+    		id: create_if_block$6.name,
     		type: "if",
     		source: "(10:4) {#if action === 'clear'}",
     		ctx
@@ -1142,7 +1142,7 @@ var app = (function () {
     	let if_block_anchor;
 
     	function select_block_type(ctx, dirty) {
-    		if (/*action*/ ctx[5] === "clear") return create_if_block$5;
+    		if (/*action*/ ctx[5] === "clear") return create_if_block$6;
     		if (/*action*/ ctx[5] === "reveal") return create_if_block_1$3;
     		if (/*action*/ ctx[5] === "check") return create_if_block_2;
     	}
@@ -1708,7 +1708,7 @@ var app = (function () {
     }
 
     // (93:14) {:else}
-    function create_else_block(ctx) {
+    function create_else_block$1(ctx) {
     	let t_value = /*display*/ ctx[32] + "";
     	let t;
 
@@ -1732,7 +1732,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block.name,
+    		id: create_else_block$1.name,
     		type: "else",
     		source: "(93:14) {:else}",
     		ctx
@@ -1742,7 +1742,7 @@ var app = (function () {
     }
 
     // (91:14) {#if display.includes('<svg')}
-    function create_if_block$4(ctx) {
+    function create_if_block$5(ctx) {
     	let html_tag;
     	let raw_value = /*display*/ ctx[32] + "";
     	let html_anchor;
@@ -1776,7 +1776,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block$4.name,
+    		id: create_if_block$5.name,
     		type: "if",
     		source: "(91:14) {#if display.includes('<svg')}",
     		ctx
@@ -1795,8 +1795,8 @@ var app = (function () {
 
     	function select_block_type(ctx, dirty) {
     		if (show_if == null || dirty[0] & /*rowData*/ 4) show_if = !!/*display*/ ctx[32].includes("<svg");
-    		if (show_if) return create_if_block$4;
-    		return create_else_block;
+    		if (show_if) return create_if_block$5;
+    		return create_else_block$1;
     	}
 
     	let current_block_type = select_block_type(ctx, [-1, -1]);
@@ -2564,7 +2564,7 @@ var app = (function () {
     }
 
     // (112:2) {#if value}
-    function create_if_block$3(ctx) {
+    function create_if_block$4(ctx) {
     	let text_1;
     	let t;
     	let text_1_transition;
@@ -2653,7 +2653,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block$3.name,
+    		id: create_if_block$4.name,
     		type: "if",
     		source: "(112:2) {#if value}",
     		ctx
@@ -2674,7 +2674,7 @@ var app = (function () {
     	let mounted;
     	let dispose;
     	let if_block0 = /*showCheck*/ ctx[11] && !/*correct*/ ctx[10] && create_if_block_1$2(ctx);
-    	let if_block1 = /*value*/ ctx[2] && create_if_block$3(ctx);
+    	let if_block1 = /*value*/ ctx[2] && create_if_block$4(ctx);
 
     	const block = {
     		c: function create() {
@@ -2783,7 +2783,7 @@ var app = (function () {
     						transition_in(if_block1, 1);
     					}
     				} else {
-    					if_block1 = create_if_block$3(ctx);
+    					if_block1 = create_if_block$4(ctx);
     					if_block1.c();
     					transition_in(if_block1, 1);
     					if_block1.m(g, text_1);
@@ -3428,7 +3428,7 @@ var app = (function () {
     }
 
     // (224:0) {#if keyboardVisible}
-    function create_if_block$2(ctx) {
+    function create_if_block$3(ctx) {
     	let div;
     	let keyboard;
     	let current;
@@ -3487,7 +3487,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block$2.name,
+    		id: create_if_block$3.name,
     		type: "if",
     		source: "(224:0) {#if keyboardVisible}",
     		ctx
@@ -3517,7 +3517,7 @@ var app = (function () {
     		each_blocks[i] = null;
     	});
 
-    	let if_block = /*keyboardVisible*/ ctx[13] && create_if_block$2(ctx);
+    	let if_block = /*keyboardVisible*/ ctx[13] && create_if_block$3(ctx);
 
     	const block = {
     		c: function create() {
@@ -3627,7 +3627,7 @@ var app = (function () {
     						transition_in(if_block, 1);
     					}
     				} else {
-    					if_block = create_if_block$2(ctx);
+    					if_block = create_if_block$3(ctx);
     					if_block.c();
     					transition_in(if_block, 1);
     					if_block.m(if_block_anchor.parentNode, if_block_anchor);
@@ -5965,7 +5965,7 @@ var app = (function () {
     const file$2 = "node_modules/svelte-crossword/src/CompletedMessage.svelte";
 
     // (10:0) {#if isOpen}
-    function create_if_block$1(ctx) {
+    function create_if_block$2(ctx) {
     	let div2;
     	let div1;
     	let div0;
@@ -6130,7 +6130,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block$1.name,
+    		id: create_if_block$2.name,
     		type: "if",
     		source: "(10:0) {#if isOpen}",
     		ctx
@@ -6197,7 +6197,7 @@ var app = (function () {
     function create_fragment$2(ctx) {
     	let if_block_anchor;
     	let current;
-    	let if_block = /*isOpen*/ ctx[1] && create_if_block$1(ctx);
+    	let if_block = /*isOpen*/ ctx[1] && create_if_block$2(ctx);
 
     	const block = {
     		c: function create() {
@@ -6222,7 +6222,7 @@ var app = (function () {
     						transition_in(if_block, 1);
     					}
     				} else {
-    					if_block = create_if_block$1(ctx);
+    					if_block = create_if_block$2(ctx);
     					if_block.c();
     					transition_in(if_block, 1);
     					if_block.m(if_block_anchor.parentNode, if_block_anchor);
@@ -6539,7 +6539,7 @@ var app = (function () {
     });
 
     // (130:0) {#if validated}
-    function create_if_block(ctx) {
+    function create_if_block$1(ctx) {
     	let article;
     	let t0;
     	let div;
@@ -6826,7 +6826,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block.name,
+    		id: create_if_block$1.name,
     		type: "if",
     		source: "(130:0) {#if validated}",
     		ctx
@@ -7046,7 +7046,7 @@ var app = (function () {
     function create_fragment$1(ctx) {
     	let if_block_anchor;
     	let current;
-    	let if_block = /*validated*/ ctx[15] && create_if_block(ctx);
+    	let if_block = /*validated*/ ctx[15] && create_if_block$1(ctx);
 
     	const block = {
     		c: function create() {
@@ -7071,7 +7071,7 @@ var app = (function () {
     						transition_in(if_block, 1);
     					}
     				} else {
-    					if_block = create_if_block(ctx);
+    					if_block = create_if_block$1(ctx);
     					if_block.c();
     					transition_in(if_block, 1);
     					if_block.m(if_block_anchor.parentNode, if_block_anchor);
@@ -7625,7 +7625,7 @@ var app = (function () {
     		y: 2
     	},
     	{
-    		clue: "Domain of first stint at HUL",
+    		clue: "Domain of his first stint at HUL",
     		answer: "TEA",
     		direction: "across",
     		x: 9,
@@ -7664,7 +7664,188 @@ var app = (function () {
     /* App.svelte generated by Svelte v3.38.3 */
     const file = "App.svelte";
 
-    // (16:6) 
+    // (39:2) {:else}
+    function create_else_block(ctx) {
+    	let crossword;
+    	let current;
+
+    	crossword = new Crossword({
+    			props: {
+    				data: dataInput,
+    				actions: /*actions*/ ctx[1],
+    				$$slots: { message: [create_message_slot_1] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const block = {
+    		c: function create() {
+    			create_component(crossword.$$.fragment);
+    		},
+    		l: function claim(nodes) {
+    			claim_component(crossword.$$.fragment, nodes);
+    		},
+    		m: function mount(target, anchor) {
+    			mount_component(crossword, target, anchor);
+    			current = true;
+    		},
+    		p: function update(ctx, dirty) {
+    			const crossword_changes = {};
+
+    			if (dirty & /*$$scope*/ 4) {
+    				crossword_changes.$$scope = { dirty, ctx };
+    			}
+
+    			crossword.$set(crossword_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(crossword.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(crossword.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			destroy_component(crossword, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_else_block.name,
+    		type: "else",
+    		source: "(39:2) {:else}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (28:2) {#if reveal != false}
+    function create_if_block(ctx) {
+    	let crossword;
+    	let current;
+
+    	crossword = new Crossword({
+    			props: {
+    				data: dataInput,
+    				$$slots: { message: [create_message_slot] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const block = {
+    		c: function create() {
+    			create_component(crossword.$$.fragment);
+    		},
+    		l: function claim(nodes) {
+    			claim_component(crossword.$$.fragment, nodes);
+    		},
+    		m: function mount(target, anchor) {
+    			mount_component(crossword, target, anchor);
+    			current = true;
+    		},
+    		p: function update(ctx, dirty) {
+    			const crossword_changes = {};
+
+    			if (dirty & /*$$scope*/ 4) {
+    				crossword_changes.$$scope = { dirty, ctx };
+    			}
+
+    			crossword.$set(crossword_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(crossword.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(crossword.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			destroy_component(crossword, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block.name,
+    		type: "if",
+    		source: "(28:2) {#if reveal != false}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (42:4) 
+    function create_message_slot_1(ctx) {
+    	let div;
+    	let h3;
+    	let t0;
+    	let t1;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			div = element("div");
+    			h3 = element("h3");
+    			t0 = text("Yay! Happy Birthday!!");
+    			t1 = space();
+    			img = element("img");
+    			this.h();
+    		},
+    		l: function claim(nodes) {
+    			div = claim_element(nodes, "DIV", { slot: true });
+    			var div_nodes = children(div);
+    			h3 = claim_element(div_nodes, "H3", {});
+    			var h3_nodes = children(h3);
+    			t0 = claim_text(h3_nodes, "Yay! Happy Birthday!!");
+    			h3_nodes.forEach(detach_dev);
+    			t1 = claim_space(div_nodes);
+    			img = claim_element(div_nodes, "IMG", { alt: true, src: true, width: true });
+    			div_nodes.forEach(detach_dev);
+    			this.h();
+    		},
+    		h: function hydrate() {
+    			add_location(h3, file, 42, 6, 988);
+    			attr_dev(img, "alt", "celebration");
+    			if (img.src !== (img_src_value = "mama.jpg")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "width", "100%");
+    			add_location(img, file, 43, 6, 1025);
+    			attr_dev(div, "slot", "message");
+    			add_location(div, file, 41, 4, 961);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div, anchor);
+    			append_dev(div, h3);
+    			append_dev(h3, t0);
+    			append_dev(div, t1);
+    			append_dev(div, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_message_slot_1.name,
+    		type: "slot",
+    		source: "(42:4) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (31:6) 
     function create_message_slot(ctx) {
     	let div;
     	let h3;
@@ -7677,7 +7858,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			h3 = element("h3");
-    			t0 = text("Yay! Happy Birthday!");
+    			t0 = text("Yay! Happy Birthday!!");
     			t1 = space();
     			img = element("img");
     			this.h();
@@ -7687,7 +7868,7 @@ var app = (function () {
     			var div_nodes = children(div);
     			h3 = claim_element(div_nodes, "H3", {});
     			var h3_nodes = children(h3);
-    			t0 = claim_text(h3_nodes, "Yay! Happy Birthday!");
+    			t0 = claim_text(h3_nodes, "Yay! Happy Birthday!!");
     			h3_nodes.forEach(detach_dev);
     			t1 = claim_space(div_nodes);
     			img = claim_element(div_nodes, "IMG", { alt: true, src: true, width: true });
@@ -7695,13 +7876,13 @@ var app = (function () {
     			this.h();
     		},
     		h: function hydrate() {
-    			add_location(h3, file, 16, 8, 295);
+    			add_location(h3, file, 31, 8, 748);
     			attr_dev(img, "alt", "celebration");
     			if (img.src !== (img_src_value = "mama.jpg")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "width", "100%");
-    			add_location(img, file, 17, 8, 333);
+    			add_location(img, file, 32, 8, 787);
     			attr_dev(div, "slot", "message");
-    			add_location(div, file, 15, 6, 266);
+    			add_location(div, file, 30, 6, 719);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -7719,7 +7900,7 @@ var app = (function () {
     		block,
     		id: create_message_slot.name,
     		type: "slot",
-    		source: "(16:6) ",
+    		source: "(31:6) ",
     		ctx
     	});
 
@@ -7733,17 +7914,19 @@ var app = (function () {
     	let t0;
     	let t1;
     	let section;
-    	let crossword;
+    	let current_block_type_index;
+    	let if_block;
     	let current;
+    	const if_block_creators = [create_if_block, create_else_block];
+    	const if_blocks = [];
 
-    	crossword = new Crossword({
-    			props: {
-    				data: dataInput,
-    				$$slots: { message: [create_message_slot] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
+    	function select_block_type(ctx, dirty) {
+    		if (/*reveal*/ ctx[0] != false) return 0;
+    		return 1;
+    	}
+
+    	current_block_type_index = select_block_type(ctx);
+    	if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
 
     	const block = {
     		c: function create() {
@@ -7753,7 +7936,7 @@ var app = (function () {
     			t0 = text("Birthday Puzzle for Mama :)");
     			t1 = space();
     			section = element("section");
-    			create_component(crossword.$$.fragment);
+    			if_block.c();
     			this.h();
     		},
     		l: function claim(nodes) {
@@ -7769,21 +7952,21 @@ var app = (function () {
     			t1 = claim_space(article_nodes);
     			section = claim_element(article_nodes, "SECTION", { id: true, class: true });
     			var section_nodes = children(section);
-    			claim_component(crossword.$$.fragment, section_nodes);
+    			if_block.l(section_nodes);
     			section_nodes.forEach(detach_dev);
     			article_nodes.forEach(detach_dev);
     			this.h();
     		},
     		h: function hydrate() {
     			attr_dev(p, "class", "svelte-1eq2s6f");
-    			add_location(p, file, 8, 4, 145);
+    			add_location(p, file, 20, 4, 572);
     			attr_dev(div, "class", "intro svelte-1eq2s6f");
-    			add_location(div, file, 7, 2, 121);
+    			add_location(div, file, 19, 2, 548);
     			attr_dev(section, "id", "slots");
     			attr_dev(section, "class", "svelte-1eq2s6f");
-    			add_location(section, file, 13, 2, 204);
+    			add_location(section, file, 25, 2, 631);
     			attr_dev(article, "class", "svelte-1eq2s6f");
-    			add_location(article, file, 6, 0, 109);
+    			add_location(article, file, 18, 0, 536);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, article, anchor);
@@ -7792,30 +7975,24 @@ var app = (function () {
     			append_dev(p, t0);
     			append_dev(article, t1);
     			append_dev(article, section);
-    			mount_component(crossword, section, null);
+    			if_blocks[current_block_type_index].m(section, null);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
-    			const crossword_changes = {};
-
-    			if (dirty & /*$$scope*/ 1) {
-    				crossword_changes.$$scope = { dirty, ctx };
-    			}
-
-    			crossword.$set(crossword_changes);
+    			if_block.p(ctx, dirty);
     		},
     		i: function intro(local) {
     			if (current) return;
-    			transition_in(crossword.$$.fragment, local);
+    			transition_in(if_block);
     			current = true;
     		},
     		o: function outro(local) {
-    			transition_out(crossword.$$.fragment, local);
+    			transition_out(if_block);
     			current = false;
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(article);
-    			destroy_component(crossword);
+    			if_blocks[current_block_type_index].d();
     		}
     	};
 
@@ -7830,17 +8007,47 @@ var app = (function () {
     	return block;
     }
 
+    function findGetParameter(parameterName) {
+    	var result = null, tmp = [];
+    	var items = location.search.substr(1).split("&");
+
+    	for (var index = 0; index < items.length; index++) {
+    		tmp = items[index].split("=");
+    		if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+    	}
+
+    	return result;
+    }
+
     function instance($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots("App", slots, []);
+    	var reveal = findGetParameter("reveal") || false;
+    	var actions = ["clear", "check"];
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
     		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<App> was created with unknown prop '${key}'`);
     	});
 
-    	$$self.$capture_state = () => ({ Crossword, dataInput });
-    	return [];
+    	$$self.$capture_state = () => ({
+    		Crossword,
+    		dataInput,
+    		findGetParameter,
+    		reveal,
+    		actions
+    	});
+
+    	$$self.$inject_state = $$props => {
+    		if ("reveal" in $$props) $$invalidate(0, reveal = $$props.reveal);
+    		if ("actions" in $$props) $$invalidate(1, actions = $$props.actions);
+    	};
+
+    	if ($$props && "$$inject" in $$props) {
+    		$$self.$inject_state($$props.$$inject);
+    	}
+
+    	return [reveal, actions];
     }
 
     class App extends SvelteComponentDev {

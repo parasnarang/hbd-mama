@@ -2,6 +2,18 @@
   import Crossword from "svelte-crossword";
   import dataInput from "./data/mama.json";
 
+  function findGetParameter(parameterName) {
+    var result = null,
+        tmp = [];
+    var items = location.search.substr(1).split("&");
+    for (var index = 0; index < items.length; index++) {
+        tmp = items[index].split("=");
+        if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+    }
+    return result;
+  }
+  var reveal = findGetParameter("reveal") || false;
+  var actions = ["clear", "check"]
 </script>
 
 <article>
@@ -12,14 +24,30 @@
   </div>
 
   <section id="slots">
+
+  {#if reveal != false}
+
     <Crossword data="{dataInput}">
       <div slot="message">
-        <h3>Yay! Happy Birthday!</h3>
+        <h3>Yay! Happy Birthday!!</h3>
         <img
           alt="celebration"
           src="mama.jpg" width="100%"/>
       </div>
     </Crossword>
+
+  {:else}
+
+    <Crossword data="{dataInput}" actions="{actions}">
+    <div slot="message">
+      <h3>Yay! Happy Birthday!!</h3>
+      <img
+        alt="celebration"
+        src="mama.jpg" width="100%"/>
+    </div>
+  </Crossword>
+
+  {/if}
   </section>
 </article>
 
