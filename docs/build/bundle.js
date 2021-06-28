@@ -7958,14 +7958,14 @@ var app = (function () {
     			this.h();
     		},
     		h: function hydrate() {
-    			attr_dev(p, "class", "svelte-1eq2s6f");
+    			attr_dev(p, "class", "svelte-13fz13v");
     			add_location(p, file, 20, 4, 572);
-    			attr_dev(div, "class", "intro svelte-1eq2s6f");
+    			attr_dev(div, "class", "intro svelte-13fz13v");
     			add_location(div, file, 19, 2, 548);
     			attr_dev(section, "id", "slots");
-    			attr_dev(section, "class", "svelte-1eq2s6f");
+    			attr_dev(section, "class", "svelte-13fz13v");
     			add_location(section, file, 25, 2, 631);
-    			attr_dev(article, "class", "svelte-1eq2s6f");
+    			attr_dev(article, "class", "svelte-13fz13v");
     			add_location(article, file, 18, 0, 536);
     		},
     		m: function mount(target, anchor) {

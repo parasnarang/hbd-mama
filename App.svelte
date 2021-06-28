@@ -65,7 +65,7 @@
   }
   section {
     max-width: 960px;
-    margin: 5em 0;
+    margin: 1em 0;
   }
 
   .info {
