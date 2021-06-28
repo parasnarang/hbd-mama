@@ -14,7 +14,7 @@
   "homepage": "https://github.com/parasnarang/hbd-mama#readme",
   "scripts": {
     "dev": "rollup -c -w",
-    "start": "sirv public",
+    "start": "sirv docs",
     "predeploy": "rollup -c",
     "deploy": "rollup -c rollup.config-ssr.js"
   },
